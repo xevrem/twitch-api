@@ -1,0 +1,16 @@
+{
+  "name": "twitch-api",
+  "version": "1.0.0",
+  "description": "a simple twitch api accessor",
+  "main": "server.js",
+  "repository": "https://github.com/xevrem/twitch-api.git",
+  "author": "erika jonell <erika.jonell@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "axios": "^0.17.0"
+  }
+}
