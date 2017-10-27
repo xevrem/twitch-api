@@ -1,7 +1,3 @@
-// server.js
-// where your node app starts
-
-// init project
 let express = require('express');
 let axios = require('axios');
 
@@ -75,8 +71,7 @@ function get_stream_info(stream){
     headers:{
       'Accept': 'application/vnd.twitchtv.v5+json',
       'Client-ID': client_id,
-    },
-    responseType: 'jsonp',
+    }
   }).then( response =>{
     var user = response.data.users[0];
     return axios({
@@ -85,8 +80,7 @@ function get_stream_info(stream){
       headers:{
         'Accept': 'application/vnd.twitchtv.v5+json',
         'Client-ID': client_id,
-      },
-      responseType: 'jsonp',
+      }
     });
   });
 }
@@ -101,7 +95,6 @@ function get_status(channel_id){
     headers:{
       'Accept': 'application/vnd.twitchtv.v5+json',
       'Client-ID': client_id,
-    },
-    responseType: 'jsonp',
+    }
   });
 }
